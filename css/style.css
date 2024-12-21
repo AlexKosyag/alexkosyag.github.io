@@ -1,0 +1,409 @@
+/* General */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #151515;
+
+    color: #fff;
+    font-family: "Roboto", serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 72px;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+li {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Header */
+
+.header {
+    background-image: url("../img/cyberpunk_bgup.png");
+    height: 1030px;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(20, 20, 20, 1), rgba(255, 255, 255, 0));
+    position: sticky;
+    top: 0;
+}
+
+.nav_list {
+    padding-top: 20px;
+    display: flex;
+    gap: 100px
+}
+
+/* .nav_list_item {
+} */
+
+.header__title {
+    margin-top: 20%;
+    margin-bottom: 10px;
+}
+
+/* .header__text {
+    
+} */
+
+/* Main */
+
+.main {
+    background-image: url("../img/bg2.jpg");
+}
+
+.main__desc {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.desc_title {
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+/* .desc_title::after {
+    content: "";
+    border: solid 1px #fff;
+} */
+
+/* .desc_text {
+    
+} */
+
+.main__activities {
+    margin-top: 200px;
+}
+
+.activities_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.activities_title {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.activities_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #151515;
+}
+
+.box_img {
+    max-width: 200px;
+    padding-top: 40px;
+}
+
+.box_title {
+    font-size: 64px;
+    text-align: center;
+    padding: 40px;
+}
+
+/* Guests */
+
+.main__guests {
+    margin-top: 200px;
+}
+
+.guests_title {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Swiper */
+
+.slide_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: #151515;
+}
+
+.slide_box:hover {
+    cursor: grab;
+}
+
+.slide_img {
+    max-width: 320px;
+}
+
+.slide_title {
+    margin-top: 40px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.main__tickets {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 200px;
+}
+
+.ticket_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #151515;
+    padding: 40px;
+    max-width: 400px;
+}
+
+.ticket_title {
+    font-size: 36px;
+    font-weight: 700;
+    /* margin-top: 40px; */
+}
+
+.box_list {
+    list-style-type: disc;
+    margin-bottom: 85px;
+}
+
+.box_list_item {
+    margin: 20px 0;
+}
+
+.box_price {
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.box_btn {
+    border: solid 2px #009D26;
+    border-radius: 30px;
+    background-color: #009D26;
+    margin-bottom: 30px;
+    padding: 8px 24px;
+
+    font-size: 36px;
+    color: #fff;
+}
+
+.box_btn:active {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.off {
+    color: rgb(77, 77, 77);
+}
+
+/* Modal */
+
+.modal {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100vh;
+    width: 100vw;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 50px 50px;
+    background-color: #151515;
+    width: 600px;
+    max-width: 100%;
+    height: 300px;
+    text-align: center;
+}
+
+.modal.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.close {
+    position: relative;
+    right:  -15rem;
+    top: 0.5rem;
+    cursor: pointer;
+}
+
+.close::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 20px;
+    background-color: #009D26;
+    transform: rotate(45deg);
+    
+}
+
+.close::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 20px;
+    background-color: #009D26;
+    transform: rotate(135deg);
+   
+    cursor: pointer;
+}
+
+.modal_title {
+    margin-bottom: 40px;
+}
+
+.modal_text {
+    margin-bottom: 40px;
+}
+
+.modal_btn {
+    border: solid 2px #009D26;
+    border-radius: 30px;
+    background-color: #009D26;
+    padding: 8px 24px;
+
+    font-size: 36px;
+    color: #fff;
+}
+
+.modal_btn:active {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.modal_input {
+    min-width: 200px;
+    max-width: 100%;
+    min-height: 50px;
+    max-height: 100%;
+
+    font-family: "Roboto", serif;
+    font-weight: 700;
+
+    border-radius: 10px;
+    border-style: none;
+
+    margin-bottom: 20px;
+}
+
+/* Map */
+
+.map_box {
+    text-align: center;
+    margin-top: 200px;
+    padding-bottom: 200px;
+}
+
+.map_title {
+    margin-bottom: 40px;
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #151515;
+    padding: 40px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+
+    font-size: 24px;
+}
+
+.email {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.goUp {
+    background-color: #fff;
+    border-radius: 50%;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    pointer-events: all;
+    opacity: 0;
+
+    transition: opacity 0.5s ease-in-out;
+}
+
+.span {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    width: 3px;
+    height: 30px;
+    background-color: #000;
+    top: 12px;
+    border-radius: 5px;
+}
+.span::before {
+    content: '';
+    position: absolute;
+    right: -5px;
+    transform: translateX(85%);
+    width: 3px;
+    height: 15px;
+    background-color: #000;
+    top: -2px;
+    border-radius: 5px;
+    transform: rotate(135deg);
+}
+.span::after {
+    content: '';
+    position: absolute;
+    right: 5px;
+    transform: translateX(85%);
+    width: 3px;
+    height: 15px;
+    background-color: #000;
+    top: -2px;
+    border-radius: 5px;
+    transform: rotate(45deg);
+}

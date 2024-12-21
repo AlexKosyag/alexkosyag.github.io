@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBERCITY</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/swiper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <nav class="header__nav">
+            <ul class="nav_list">
+                <li class="nav_list_item"><a href="#header" data-anchor-about="">О выставке</a></li>
+                
+                <li class="nav_list_item" data-anchor-contacts=""><a href="#footer">Гости</a></li>
+                <li class="nav_list_item" data-anchor-tarif=""><a href="#main__tickets">Тарифы</a></li>
+                <li class="nav_list_item" data-anchor-location=""><a href="#main__tickets">Где мы?</a></li>
+            </ul>
+        </nav>
+        <div class="header__title">
+            <h1>CYBERCITY</h1>
+        </div>
+        <div class="header__text">
+            <p>Выставка киберпанк будущего</p>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="main__desc">
+                <h2 class="desc_title">Что такое Cybercity?</h2>
+                <p class="desc_text">Cybercity - это выставка разнообразных экспонатов, картин, игр, одежды и других
+                    творечских проектов, которые пропитаны атмосферой киберпанка. Здесь вы сможете отлично провести
+                    время, находясь в декорациях необычайных неоновых локаций. Также у нас заготовлены разные
+                    активности, чтобы вы точно не заскучали.</p>
+            </div>
+
+            <div class="main__activities" id="main__acivities">
+                <h2 class="activities_title">Что вас ждёт?</h2>
+                <div class="activities_grid">
+                    <div class="activities_box">
+                        <img src="../img/vr.png" alt="vr" class="box_img">
+                        <p class="box_title">VR</p>
+                    </div>
+                    <div class="activities_box">
+                        <img src="../img/merch.png" alt="merch" class="box_img">
+                        <p class="box_title">Мерч</p>
+                    </div>
+                    <div class="activities_box">
+                        <img src="../img/roboarm.png" alt="robots" class="box_img">
+                        <p class="box_title">Роботы</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main__guests">
+                <h2 class="guests_title">
+                    Приглашённые гости
+                </h2>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide_box">
+                                <img src="../img/ville.png" alt="ville" class="slide_img">
+                                <h2 class="slide_title">Вилли Каллио</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_box">
+                                <img src="../img/char_pinkhead.png" alt="randomperson" class="slide_img">
+                                <h2 class="slide_title">Рандомио Персон</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_box">
+                                <img src="../img/sanabi.png" alt="invader303" class="slide_img">
+                                <h2 class="slide_title">Invader 303</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_box">
+                                <img src="../img/ville.png" alt="ville" class="slide_img">
+                                <h2 class="slide_title">Вилли Каллио</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_box">
+                                <img src="../img/ville.png" alt="ville" class="slide_img">
+                                <h2 class="slide_title">Вилли Каллио</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="main__tickets" id="main__tickets">
+                    <div class="ticket_box">
+                        <p class="ticket_title">Basic</p>
+                        <ul class="box_list">
+                            <li class="box_list_item">Проход на выставку</li>
+                            <li class="box_list_item">Участие в активностях</li>
+                            <li class="box_list_item">Незабываемые эмоции</li>
+                            <li class="box_list_item off">Скидки на мерч</li>
+                            <li class="box_list_item off">Классные подарки</li>
+                        </ul>
+                        <p class="box_price">1500 руб.</p>
+                        <button class="box_btn" data-modal="">Купить</button>
+                    </div>
+                    <div class="ticket_box">
+                        <p class="ticket_title">Ababced</p>
+                        <ul class="box_list">
+                            <li class="box_list_item">Проход на выставку</li>
+                            <li class="box_list_item">Участие в активностях</li>
+                            <li class="box_list_item">Незабываемые эмоции</li>
+                            <li class="box_list_item">Скидки на мерч</li>
+                            <li class="box_list_item off">Классные подарки</li>
+                        </ul>
+                        <p class="box_price">1750 руб.</p>
+                        <button class="box_btn" data-modal="">Купить</button>
+                    </div>
+                    <div class="ticket_box">
+                        <p class="ticket_title">VIP</p>
+                        <ul class="box_list">
+                            <li class="box_list_item">Проход на выставку</li>
+                            <li class="box_list_item">Участие в активностях</li>
+                            <li class="box_list_item">Незабываемые эмоции</li>
+                            <li class="box_list_item">Скидки на мерч</li>
+                            <li class="box_list_item">Классные подарки</li>
+                        </ul>
+                        <p class="box_price">2500 руб.</p>
+                        <button class="box_btn" data-modal="">Купить</button>
+                    </div>
+                </div>
+                <div class="map_box">
+                    <h2 class="map_title">Где мы?</h2>
+                    <div class="map">
+                        <script type="text/javascript" charset="utf-8" async
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad0cea80382d324f3033029b119a6b18407d5cc604985cad06fdf32c822af5937&amp;width=1260&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
+
+            </div>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="contacts">
+            <a href="tg:alexkosss" class="email">@cybercity - Telegram</a>
+            <a href="tel:+71234567890" class="number">+7(123) 456-78-90</a>
+        </div>
+    </footer>
+
+
+
+    <div class="modal">
+        <div class="modal__content">
+            <div class="modal__dialog">
+                <div class="close"></div>
+                <h2 class="modal_title">Оставьте свои контакты</h2>
+                <p class="modal_text">Для того, чтобы узнавать о наших новостях первым</p>
+                <input type="text" placeholder="ФИО" class="modal_input"><br>
+                <input type="text" placeholder="E-mail" class="modal_input"><br>
+                <button class="modal_btn" id="close_button">Готово</button>
+            </div>
+        </div>
+        
+        
+    </div>
+    <div class="goUp" data-anchor-start="">
+        <div class="span"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
